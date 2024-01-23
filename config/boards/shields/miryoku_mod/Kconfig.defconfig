@@ -1,0 +1,6 @@
+if SHIELD_MIRYOKU_MOD
+
+config ZMK_KEYBOARD_NAME
+    default "miryoku_mod"
+
+endif

@@ -2,7 +2,7 @@
 
 / {
     model = "zmk-test";
-    compatible = "zmk-test", "st,rpi_pico";
+    compatible = "zmk-test", "st,sparkfun_pro_micro_rp2040";
 
     chosen {
         zmk,kscan = &kscan0;

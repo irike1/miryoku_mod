@@ -19,4 +19,4 @@
 ---
 include:
   - board: sparkfun_pro_micro_rp2040
-    shield: two_percent_milk
+    shield: miryoku_mod

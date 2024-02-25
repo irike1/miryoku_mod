@@ -18,5 +18,5 @@
 #
 ---
 include:
-  - board: sparkfun_pro_micro_rp2040
+  - board: nice_nano_v2
     shield: miryoku_mod

@@ -9,7 +9,6 @@ config ZMK_SPLIT_ROLE_CENTRAL
 config GPIO
     default y
 
-
 config BT_HOST_CCM
     default y
 endif

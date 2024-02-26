@@ -29,7 +29,7 @@ RC(5,0) RC(5,1)                 RC(4,5) RC(5,5)     RC(5,6) RC(4,6)             
 
     kscan0: kscan {
 
-        diode-direction = "row2col";
+        diode-direction = "col2row";
         row-gpios
             = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row A from the schematic file
             , <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row B from the schematic file

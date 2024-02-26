@@ -9,6 +9,8 @@ config ZMK_SPLIT_ROLE_CENTRAL
 config GPIO
     default y
 
+config BT_CENTRAL
+    default y
 endif
 
 if SHIELD_MIRYOKU_MOD_LEFT || SHIELD_MIRYOKU_MOD_RIGHT

@@ -6,9 +6,20 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config GPIO
+    default y
+
+
+config BT_HOST_CCM
+    default y
+endif
+
 if SHIELD_MIRYOKU_MOD_LEFT || SHIELD_MIRYOKU_MOD_RIGHT
 
 config ZMK_SPLIT
+    default y
+
+config GPIO
     default y
 
 endif

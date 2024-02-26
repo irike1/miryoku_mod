@@ -1,2 +1,5 @@
-config SHIELD_MIRYOKU_MOD
-    def_bool $(shields_list_contains,miryoku_mod)
+config SHIELD_MIRYOKU_MOD_LEFT
+    def_bool $(shields_list_contains,miryoku_mod_left)
+
+config SHIELD_MIRYOKU_MOD_RIGHT
+    def_bool $(shields_list_contains,miryoku_mod_right)

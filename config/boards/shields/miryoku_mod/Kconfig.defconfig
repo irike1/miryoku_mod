@@ -1,6 +1,16 @@
-if SHIELD_MIRYOKU_MOD
+if SHIELD_MIRYOKU_MOD_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "miryoku_mod"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_MIRYOKU_MOD_LEFT || SHIELD_MIRYOKU_MOD_RIGHT
+
+config ZMK_SPLIT
+    default y
 
 endif

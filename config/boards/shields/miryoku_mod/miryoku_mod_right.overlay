@@ -1,0 +1,16 @@
+#include "iris.dtsi"
+
+&default_transform { // The matrix transform for this board is 6 columns over because the left half is 6 columns wide according to the matrix.
+    col-offset = <6>;
+};
+
+&kscan0 {
+    col-gpios
+        = <&gpio1 15 GPIO_ACTIVE_HIGH> // col7 in the schematic
+        , <&gpio1 13 GPIO_ACTIVE_HIGH> // col8 in the schematic
+        , <&gpio1 11 GPIO_ACTIVE_HIGH> // col9 in the schematic
+        , <&gpio1 6  GPIO_ACTIVE_HIGH> // col10 in the schematic
+        , <&gpio1 7  GPIO_ACTIVE_HIGH> // col11 in the schematic
+        , <&gpio1 2  GPIO_ACTIVE_HIGH> // col12 in the schematic
+        ;
+};

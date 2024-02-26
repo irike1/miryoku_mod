@@ -11,6 +11,9 @@ config GPIO
 
 config BT_CENTRAL
     default y
+
+config BT_HOST_CCM
+    default y
 endif
 
 if SHIELD_MIRYOKU_MOD_LEFT || SHIELD_MIRYOKU_MOD_RIGHT

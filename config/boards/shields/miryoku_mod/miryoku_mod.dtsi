@@ -12,7 +12,6 @@
         status = "okay";
     };
 
-    };
 
     right_encoder: encoder_right {
         compatible = "alps,EC12D15";

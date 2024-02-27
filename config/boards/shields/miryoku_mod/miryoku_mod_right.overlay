@@ -6,23 +6,23 @@
 
 &kscan0 {
     col-gpios
-        = <&gpio1 15 (gpio_ACTIVE_HIGH | gpio_PULL_DOWN)> // col7 in the schematic
-        , <&gpio1 13 (gpio_ACTIVE_HIGH | gpio_PULL_DOWN)> // col8 in the schematic
-        , <&gpio1 11 (gpio_ACTIVE_HIGH | gpio_PULL_DOWN)> // col9 in the schematic
-        , <&gpio1 9  (gpio_ACTIVE_HIGH | gpio_PULL_DOWN)> // col10 in the schematic
-        , <&gpio1 7  (gpio_ACTIVE_HIGH | gpio_PULL_DOWN)> // col11 in the schematic
-        , <&gpio1 2  (gpio_ACTIVE_HIGH | gpio_PULL_DOWN)> // col12 in the schematic
+        = <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col7 in the schematic
+        , <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col8 in the schematic
+        , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col9 in the schematic
+        , <&gpio1 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col10 in the schematic
+        , <&gpio1 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col11 in the schematic
+        , <&gpio1 2  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col12 in the schematic
         ;
 };
 
 &r1_encoder {
-    a-gpios = <&gpio0 10 (gpio_ACTIVE_HIGH | gpio_PULL_UP)>;
-    b-gpios = <&gpio0 02 (gpio_ACTIVE_HIGH | gpio_PULL_UP)>;
+    a-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    b-gpios = <&gpio0 02 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
     status = "okay";
 };
 
 &r2_encoder {
-    a-gpios = <&gpio0 29 (gpio_ACTIVE_HIGH | gpio_PULL_UP)>;
-    b-gpios = <&gpio0 32 (gpio_ACTIVE_HIGH | gpio_PULL_UP)>;
+    a-gpios = <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    b-gpios = <&gpio0 32 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
     status = "okay";
 };

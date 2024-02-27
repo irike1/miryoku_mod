@@ -5,7 +5,7 @@
         = <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col1 in the schematic
         , <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col2 in the schematic
         , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col3 in the schematic
-        , <&gpio1 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col4 in the schematic
+        , <&gpio0 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col4 in the schematic
         , <&gpio1 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col5 in the schematic
         , <&gpio1 2  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col6 in the schematic
         ;

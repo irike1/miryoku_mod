@@ -8,19 +8,11 @@
 
     left_encoder: encoder_left {
         compatible = "alps,ec11";
-        a-gpios = <PIN_A (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <PIN_B (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        a-gpios = <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <80>;
         status = "disabled";
     };
-    
-    // right_encoder: encoder_right {
-    //     compatible = "alps,ec11";
-    //     a-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    //     b-gpios = <&gpio0 2  (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    //     steps = <80>;
-    //     status = "okay";
-    // };
 
     sensors: sensors {
         compatible = "zmk,keymap-sensors";

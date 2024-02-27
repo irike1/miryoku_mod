@@ -15,13 +15,13 @@
         ;
 };
 
-&r1_encoder {
+&encoder_3 {
     a-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
     b-gpios = <&gpio0 02 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
     status = "okay";
 };
 
-&r2_encoder {
+&encoder_4 {
     a-gpios = <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
     b-gpios = <&gpio0 32 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
     status = "okay";

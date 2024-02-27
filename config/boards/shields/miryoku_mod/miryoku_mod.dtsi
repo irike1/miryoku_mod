@@ -6,25 +6,25 @@
         zmk,matrix-transform = &default_transform;
     };
 
-    l1_encoder: encoder_l1 {
+    encoder_1: encoder_1 {
         compatible = "alps,EC12D15";
         steps = <30>;
         status = "okay";
     };
 
-    l2_encoder: encoder_l2 {
+    encoder_2: encoder_2 {
         compatible = "alps,EC12D15";
         steps = <30>;
         status = "okay";
     };
 
-    r1_encoder: encoder_r1 {
+    encoder_3: encoder_3 {
         compatible = "alps,EC12D15";
         steps = <30>;
         status = "okay";
     };
 
-    r2_encoder: encoder_r2 {
+    encoder_4: encoder_4 {
         compatible = "alps,EC12D15";
         steps = <30>;
         status = "okay";

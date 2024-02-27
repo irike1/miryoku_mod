@@ -12,10 +12,6 @@
         status = "okay";
     };
 
-    left_encoder: encoder_left {
-        compatible = "alps,EC12D15";
-        steps = <30>;
-        status = "okay";
     };
 
     right_encoder: encoder_right {
@@ -24,11 +20,6 @@
         status = "okay";
     };
 
-    right_encoder: encoder_right {
-        compatible = "alps,EC12D15";
-        steps = <30>;
-        status = "okay";
-    };
 
 
     default_transform: keymap_transform_0 {

@@ -16,9 +16,3 @@
     b-gpios = <&gpio0 02 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
     status = "okay";
 };
-
-&left_encoder {
-    a-gpios = <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    b-gpios = <&gpio0 32 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    status = "okay";
-};

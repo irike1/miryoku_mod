@@ -9,25 +9,25 @@
     l1_encoder: encoder_l1 {
         compatible = "alps,EC12D15";
         steps = <30>;
-        status = "enabled";
+        status = "okay";
     };
 
     l2_encoder: encoder_l2 {
         compatible = "alps,EC12D15";
         steps = <30>;
-        status = "enabled";
+        status = "okay";
     };
 
     r1_encoder: encoder_r1 {
         compatible = "alps,EC12D15";
         steps = <30>;
-        status = "enabled";
+        status = "okay";
     };
 
     r2_encoder: encoder_r2 {
         compatible = "alps,EC12D15";
         steps = <30>;
-        status = "enabled";
+        status = "okay";
     };
 
     default_transform: keymap_transform_0 {

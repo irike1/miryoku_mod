@@ -14,3 +14,15 @@
         , <&gpio1 2  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col12 in the schematic
         ;
 };
+
+&r1_encoder {
+    a-gpios = <&GPIO0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    b-gpios = <&GPIO0 02 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    status = "okay";
+};
+
+&r2_encoder {
+    a-gpios = <&GPIO0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    b-gpios = <&GPIO0 32 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    status = "okay";
+};

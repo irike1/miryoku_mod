@@ -6,6 +6,30 @@
         zmk,matrix-transform = &default_transform;
     };
 
+    l1_encoder: encoder_l1 {
+        compatible = "alps,EC12D15";
+        steps = <30>;
+        status = "enabled";
+    };
+
+    l2_encoder: encoder_l2 {
+        compatible = "alps,EC12D15";
+        steps = <30>;
+        status = "enabled";
+    };
+
+    r1_encoder: encoder_r1 {
+        compatible = "alps,EC12D15";
+        steps = <30>;
+        status = "enabled";
+    };
+
+    r2_encoder: encoder_r2 {
+        compatible = "alps,EC12D15";
+        steps = <30>;
+        status = "enabled";
+    };
+
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <12>;

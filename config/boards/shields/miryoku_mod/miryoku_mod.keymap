@@ -3,6 +3,12 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&l1_encoder &l2_encoder &r1_encoder &r2_encoder>;
+        triggers-per-rotation = <15>;
+    };
+    
     keymap {
         compatible = "zmk,keymap";
 

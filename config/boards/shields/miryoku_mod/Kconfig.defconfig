@@ -13,13 +13,13 @@ if SHIELD_MIRYOKU_MOD_LEFT || SHIELD_MIRYOKU_MOD_RIGHT
 config ZMK_SPLIT
     default y
 
-# if ZMK_DISPLAY
+if ZMK_DISPLAY
 
-# config I2C
-#     default y
+config I2C
+    default y
 
-# config SSD1306
-#     default y
+config SSD1306
+    default y
 
 endif # ZMK_DISPLAY
 

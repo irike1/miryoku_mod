@@ -23,7 +23,7 @@
     &kp LCTRL   &kp A       &kp S           &kp D       &kp F       &kp G           &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp APOS
     &kp LALT    &kp Z       &kp X           &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp SLASH   &kp BSLH
     &kp GRAVE   &kp K_POWER &kp LEFT_WIN    &kp SPACE   &kp LSHIFT  &bt BT_CLR      &kp ENTER   &kp BSPC    &kp BSPC    &kp ENTER   &kp LBKT    &kp RBKT
-    &kp UP      &bootloader                             &kp LEFT    &kp RIGHT       &kp C_MUTE  &kp C_MUTE                          &kp CAPS    &kp CAPS
+    &kp UP      &bootloader                             &kp LEFT    &kp RIGHT       &kp C_MUTE  &kp C_MUTE                          &rgb_ug RGB_TOG &rgb_ug RGB_COLOR_HSB(175,100,20)
             >;
         };
     };

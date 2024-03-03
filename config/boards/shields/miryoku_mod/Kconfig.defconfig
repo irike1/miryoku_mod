@@ -6,11 +6,23 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config EC11
+    default y
+
+config EC11_TRIGGER_GLOBAL_THREAD
+    default y
+
 endif
 
 if SHIELD_MIRYOKU_MOD_LEFT || SHIELD_MIRYOKU_MOD_RIGHT
 
 config ZMK_SPLIT
+    default y
+
+config EC11
+    default y
+
+config EC11_TRIGGER_GLOBAL_THREAD
     default y
 
 # if ZMK_DISPLAY

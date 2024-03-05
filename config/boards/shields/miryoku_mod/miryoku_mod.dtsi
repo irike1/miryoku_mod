@@ -56,18 +56,18 @@ RC(5,0) RC(5,1)                 RC(4,5) RC(5,5)     RC(5,6) RC(4,6)             
     };
 };
 
-&spi3 {
-    status = "okay";
+// &spi3 {
+//     status = "okay";
 
-    e_paper_display: epd2in13@0 {
-        compatible = "good-display,gdey0213b74";
-        reg = <0>; /* SPI chip select */
-        spi-max-frequency = <4000000>;
-        reset-gpios = <&gpio0 22 GPIO_ACTIVE_LOW>;
-        dc-gpios = <&gpio0 23 GPIO_ACTIVE_LOW>;
-        busy-gpios = <&gpio0 24 GPIO_ACTIVE_HIGH>;
-        width = <250>;
-        height = <122>;
-        /* Additional properties specific to your display */
-    };
-};
+//     e_paper_display: epd2in13@0 {
+//         compatible = "good-display,gdey0213b74";
+//         reg = <0>; /* SPI chip select */
+//         spi-max-frequency = <4000000>;
+//         reset-gpios = <&gpio0 22 GPIO_ACTIVE_LOW>;
+//         dc-gpios = <&gpio0 23 GPIO_ACTIVE_LOW>;
+//         busy-gpios = <&gpio0 24 GPIO_ACTIVE_HIGH>;
+//         width = <250>;
+//         height = <122>;
+//         /* Additional properties specific to your display */
+//     };
+// };

@@ -16,8 +16,8 @@ config ZMK_SPLIT
 
 # if ZMK_DISPLAY
 
-config I2C
-    default y
+# config I2C
+#     default y
 
 # config SSD1680
 #     default y

@@ -35,7 +35,7 @@
             bindings = <
     &trans      &kp F1          &kp F2          &kp F3          &kp F4      &kp F5              &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &kp PG_UP
     &trans      &kp F11         &kp F12         &kp PSCRN       &kp SLCK    &kp K_CMENU         &kp F24     &kp F24     &kp F24     &kp LBKT    &kp RBKT    &kp PG_DN
-    &kp RCTRL   &kp HOME        &out OUT_TOG    &&bootloader    &kp F24     &kp INS             &kp F24     &kp F24     &kp UP      &kp F24     &kp F24     &kp ENTER
+    &kp RCTRL   &kp HOME        &out OUT_TOG    &bootloader    &kp F24     &kp INS             &kp F24     &kp F24     &kp UP      &kp F24     &kp F24     &kp ENTER
     &kp RALT    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4&bt CLR             &kp F24     &kp LEFT    &kp DOWN    &kp RIGHT   &kp BSLH    &kp HOME
     &kp CAPS    &trans          &trans          &trans          &kp RSHIFT  &trans              &trans      &trans      &trans      &trans      &kp LBKT    &kp END
     &kp CAPS    &kp CAPS                                        &kp F24     &kp CAPS            &kp F24     &kp F24                             &trans      &trans
@@ -44,12 +44,12 @@
         };
         alter_layer { 
             bindings = <
-    &trans      &kp F1          &kp F2          &kp F3      &kp F4      &kp F5              &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &kp PG_UP
-    &trans      &kp F11         &kp F12         &kp PSCRN   &kp SLCK    &kp K_CMENU         &kp F24     &kp F24     &kp F24     &kp F24     &kp F24     &kp PG_DN
-    &kp RCTRL   &kp HOME        &kp F24         &kp F24     &kp F24     &kp F24             &kp F24     &kp F24     &kp UP      &kp F24     &kp F24     &kp ENTER
-    &kp RALT    &kp F24         &kp F24         &kp F24     &kp F24     &kp F24             &kp F24     &kp LEFT    &kp DOWN    &kp RIGHT   &kp F24     &kp F24
-    &kp CAPS    &kp F24         &trans          &trans      &kp RSHIFT  &trans              &trans      &trans      &trans      &trans      &kp F24     &kp F24
-    &kp CAPS    &kp CAPS                                    &kp F24     &kp CAPS            &kp F24     &kp F24                             &trans      &trans
+    &trans      &kp F1          &kp F2          &kp F3          &kp F4      &kp F5              &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &kp PG_UP
+    &trans      &kp F11         &kp F12         &kp PSCRN       &kp SLCK    &kp K_CMENU         &kp F24     &kp F24     &kp F24     &kp LBKT    &kp RBKT    &kp PG_DN
+    &kp RCTRL   &kp HOME        &out OUT_TOG    &bootloader    &kp F24     &kp INS             &kp F24     &kp F24     &kp UP      &kp F24     &kp F24     &kp ENTER
+    &kp RALT    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4&bt CLR             &kp F24     &kp LEFT    &kp DOWN    &kp RIGHT   &kp BSLH    &kp HOME
+    &kp CAPS    &trans          &trans          &trans          &kp RSHIFT  &trans              &trans      &trans      &trans      &trans      &kp LBKT    &kp END
+    &kp CAPS    &kp CAPS                                        &kp F24     &kp CAPS            &kp F24     &kp F24                             &trans      &trans
             >;
             sensor-bindings = <&rot_kp PG_UP PG_DN>;
         };

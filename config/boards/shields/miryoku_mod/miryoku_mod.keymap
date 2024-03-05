@@ -9,10 +9,12 @@
 #define ALTER   2
 
 / {
-    sensors: sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&left_encoder &left_encoder>;
-        triggers-per-rotation = <20>;
+    behaviors {
+        rgb_encoder: rgb_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+        };
     };
     
     keymap {
@@ -24,8 +26,8 @@
     &kp TAB     &kp Q           &kp W           &kp E           &kp R       &kp T               &kp Y       &kp U       &kp I       &kp O       &kp P       &kp MINUS
     &kp LCTRL   &kp A           &kp S           &kp D           &kp F       &kp G               &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp APOS
     &kp LALT    &kp Z           &kp X           &kp C           &kp V       &kp B               &kp N       &kp M       &kp COMMA   &kp DOT     &kp SLASH   &kp ENTER
-    &kp CAPS    &kp F13         &kp LEFT_WIN    &kp SPACE       &kp LSHIFT  &mo LOWER           &mo LOWER   &kp BSPC    &kp SPACE   &kp ENTER   &kp DELETE  &kp RBKT
-    &kp CAPS    &kp CAPS                                        &kp MUTE    &kp CAPS            &kp F24     &kp F24                             &tog ALTER  &tog LOWER
+    &kp CAPS    &kp F13         &kp LEFT_WIN    &kp SPACE       &kp LSHIFT  &mo 1               &mo 1       &kp BSPC    &kp SPACE   &kp ENTER   &kp DELETE  &kp RBKT
+    &kp CAPS    &kp CAPS                                        &kp MUTE    &kp CAPS            &kp F24     &kp F24                             &tog 2      &tog 1
             >;
         };
         lower_layer { 
@@ -35,7 +37,7 @@
     &kp RCTRL   &kp HOME        &out OUT_TOG    &&bootloader    &kp F24     &kp INS             &kp F24     &kp F24     &kp UP      &kp F24     &kp F24     &kp ENTER
     &kp RALT    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4&bt CLR             &kp F24     &kp LEFT    &kp DOWN    &kp RIGHT   &kp BSLH    &kp HOME
     &kp CAPS    &trans          &trans          &trans          &kp RSHIFT  &trans              &trans      &trans      &trans      &trans      &kp LBKT    &kp END
-    &kp CAPS    &kp CAPS                                        &kp F24     &kp CAPS            &kp F24     &kp F24                             &trans     &trans
+    &kp CAPS    &kp CAPS                                        &kp F24     &kp CAPS            &kp F24     &kp F24                             &trans      &trans
             >;
         };
         alter_layer { 
@@ -45,7 +47,7 @@
     &kp RCTRL   &kp HOME        &kp F24         &kp F24     &kp F24     &kp F24             &kp F24     &kp F24     &kp UP      &kp F24     &kp F24     &kp ENTER
     &kp RALT    &kp F24         &kp F24         &kp F24     &kp F24     &kp F24             &kp F24     &kp LEFT    &kp DOWN    &kp RIGHT   &kp F24     &kp F24
     &kp CAPS    &kp F24         &trans          &trans      &kp RSHIFT  &trans              &trans      &trans      &trans      &trans      &kp F24     &kp F24
-    &kp CAPS    &kp CAPS                                    &kp F24     &kp CAPS            &kp F24     &kp F24                             &trans     &trans
+    &kp CAPS    &kp CAPS                                    &kp F24     &kp CAPS            &kp F24     &kp F24                             &trans      &trans
             >;
         };
 

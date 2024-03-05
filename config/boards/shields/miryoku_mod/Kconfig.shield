@@ -1,3 +1,4 @@
+
 config SHIELD_MIRYOKU_MOD_LEFT
     def_bool $(shields_list_contains,miryoku_mod_left)
 

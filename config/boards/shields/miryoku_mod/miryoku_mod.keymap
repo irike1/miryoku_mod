@@ -20,8 +20,8 @@
     &kp TAB     &kp Q           &kp W           &kp E       &kp R       &kp T               &kp Y       &kp U       &kp I       &kp O       &kp P       &kp MINUS
     &kp LCTRL   &kp A           &kp S           &kp D       &kp F       &kp G               &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp APOS
     &kp LALT    &kp Z           &kp X           &kp C       &kp V       &kp B               &kp N       &kp M       &kp COMMA   &kp DOT     &kp SLASH   &kp BSLH
-    &kp CAPS    &rgb_ug RGB_TOG &kp LEFT_WIN    &kp SPACE   &kp LSHIFT  &mo 1               &mo 1       &kp BSPC    &kp SPACE   &kp ENTER   &kp LBKT    &kp RBKT
-    &kp CAPS    &kp CAPS                                    &kp F24     &kp CAPS            &kp F24     &kp F24                             &kp F24  &kp F24
+    &kp CAPS    &kp F24         &kp LEFT_WIN    &kp SPACE   &kp LSHIFT  &mo 1               &mo 1       &kp BSPC    &kp SPACE   &kp ENTER   &kp LBKT    &kp RBKT
+    &kp CAPS    &kp CAPS                                    &kp F24     &kp CAPS            &kp F24     &kp F24                             &kp F24     &kp F24
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -29,15 +29,15 @@
         first_layer { 
             bindings = <
     &kp ESCAPE  &kp F1          &kp F2          &kp F3      &kp F4      &kp F5              &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &kp PG_UP
-    &kp TAB     &kp F11         &kp F12         &kp PSCRN   &kp SLCK    &kp K_CMENU         &kp F24     &kp U       &kp I       &kp O       &kp P       &kp PG_DN
-    &kp RCTRL   &kp HOME        &kp S           &kp D       &kp F       &kp G               &kp H       &kp J       &kp UP      &kp L       &kp SEMI    &kp APOS
-    &kp RALT    &kp Z           &kp X           &kp C       &kp V       &kp B               &kp N       &kp LEFT    &kp DOWN    &kp RIGHT   &kp BSLH    &kp BSLH
-    &kp F24     &rgb_ug RGB_TOG &kp LEFT_WIN    &kp SPACE   &kp LSHIFT  &trans              &trans      &kp BSPC    &kp BSPC    &kp ENTER   &kp LBKT    &kp RBKT
-    &kp PSCRN   &kp PSCRN                                   &kp F24 &kp PSCRN            &kp C_MUTE  &kp C_MUTE                          &rgb_ug RGB_TOG &rgb_ug RGB_COLOR_HSB(175,100,20)
+    &kp TAB     &kp F11         &kp F12         &kp PSCRN   &kp SLCK    &kp K_CMENU         &kp F24     &kp F24     &kp F24     &kp F24     &kp F24     &kp PG_DN
+    &kp RCTRL   &kp HOME        &kp S           &kp F24     &kp F24     &kp F24             &kp F24     &kp F24     &kp UP      &kp F24     &kp F24     &kp F24
+    &kp RALT    &kp F24         &kp F24         &kp F24     &kp V       &kp F24             &kp F24     &kp LEFT    &kp DOWN    &kp RIGHT   &kp F24     &kp F24
+    &kp CAPS    &rgb_ug RGB_TOG &trans          &trans      &kp RSHIFT  &trans              &trans      &kp BSPC    &kp BSPC    &kp ENTER   &kp F24     &kp F24
+    &kp CAPS    &kp CAPS                                    &kp F24     &kp CAPS            &kp F24     &kp F24                             &kp F24     &kp F24
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-        }
+        };
 
     };
 };

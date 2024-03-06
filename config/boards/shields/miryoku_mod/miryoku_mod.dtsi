@@ -26,9 +26,15 @@
         pinctrl-names = "default";
     };
 
+    // left_encoder: encoder_left {
+    //     compatible = "alps,ec11";
+    //     a-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+    //     b-gpios = <&gpio0 02 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+    //     steps = <30>;
+    // };
     // sensors: sensors {
     //     compatible = "zmk,keymap-sensors";
-    //     sensors = <&left_encoder &right_encoder>;
+    //     sensors = <&left_encoder>;
     //     triggers-per-rotation = <30>;
     // };
 

@@ -1,14 +1,14 @@
 Encoder logic
 if(a:0->1)
     then if(b=0)
-        then ->
-    else //(b=1)
-        then <-
+        then volume up
+    else //(b=1)                
+        then volume down
 if(a:1->0)
     then if(b=0)
-        then <-
+        then volume down
     else //(b=1)
-        then ->
+        then volume down
 
 encoder pins:
     30A:p0.10

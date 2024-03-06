@@ -7,6 +7,30 @@
         zmk,matrix-transform = &default_transform;
     };
 
+    &pinctrl {
+        qdec_default: qdec_default {
+            group1 {
+                psels = <NRF_PSEL(QDEC_A, 0, 10)>,
+                        <NRF_PSEL(QDEC_B, 0, 02)>;
+                bias-pull-down;
+            };
+        };
+    };
+    
+    // Set up the QDEC hardware based driver and give it the same label as the deleted node.
+    encoder: &qdec0 {
+        status = "okay";
+        led-pre = <0>;
+        steps = <30>;
+        pinctrl-0 = <&qdec_default>;
+        pinctrl-names = "default";
+    };
+
+    // sensors: sensors {
+    //     compatible = "zmk,keymap-sensors";
+    //     sensors = <&left_encoder &right_encoder>;
+    //     triggers-per-rotation = <30>;
+    // };
 
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";

@@ -10,7 +10,6 @@ if(a:1->0)
     else //(b=1)
         then ->
 
-
 encoder pins:
     30A:p0.10
     30B:p0.02

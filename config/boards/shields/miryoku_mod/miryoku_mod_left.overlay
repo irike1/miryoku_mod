@@ -10,9 +10,3 @@
     , <&gpio1 2  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col6 in the schematic
     ;
 };
-
-// &left_encoder {
-//     a-gpios = <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
-//     b-gpios = <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
-//     status = "okay";
-// };

@@ -13,17 +13,11 @@
         status = "disabled";
     };
 
-    left_encoder {
-
-    };
 
     right_encoder: encoder_right {
         compatible = "alps,ec11";
         steps = <80>;
         status = "disabled";
-    };
-    right_encoder {
-
     };
 
     sensors: sensors {

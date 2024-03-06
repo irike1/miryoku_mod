@@ -4,14 +4,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    // behaviors {
-    //     left_encoder: encoder_left {
-    //         compatible = "zmk,behavior-sensor-rotate";
-    //         #sensor-binding-cells = <2>;
-    //         bindings = <&kp>, <&kp>;
-    //     };
-    // };
-    
+
     keymap {
         compatible = "zmk,keymap";
 

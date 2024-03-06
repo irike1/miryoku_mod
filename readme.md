@@ -1,3 +1,16 @@
+Encoder logic
+if(a:0->1)
+    then if(b=0)
+        then ->
+    else //(b=1)
+        then <-
+if(a:1->0)
+    then if(b=0)
+        then <-
+    else //(b=1)
+        then ->
+
+
 encoder pins:
     30A:p0.10
     30B:p0.02

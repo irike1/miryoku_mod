@@ -2,19 +2,11 @@
 
 / {
     chosen {
-        // zephyr,display = &oled;
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
     };
 
     
-    // encoder: &qdec0 {
-    //     status = "okay";
-    //     led-pre = <0>;
-    //     steps = <30>;
-    //     pinctrl-0 = <&qdec_default>;
-    //     pinctrl-names = "default";
-    // };
 
     left_encoder: encoder_left {
         compatible = "alps,ec11";
@@ -22,7 +14,7 @@
         b-gpios = <&gpio0 02 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
         steps = <30>;
     };
-    
+
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder>;

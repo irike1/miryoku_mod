@@ -13,7 +13,7 @@ if(a:1->0)
 encoder pins:
     30A:p0.10
     30B:p0.02
-    31A:p0.329
+    31A:p0.29
     31B:p0.31
 LED
     P1.00

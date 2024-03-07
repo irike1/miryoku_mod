@@ -17,7 +17,7 @@
     &kp CAPS        &kp LCTRL       &kp LALT        &kp SPACE       &kp LSHIFT      &mo 1               &mo 1       &kp BSPC    &kp SPACE   &kp ENTER   &kp DELETE  &kp RBKT
     &kp CAPS        &kp CAPS                                        &kp C_MUTE      &kp CAPS            &kp F24     &kp F24                             &kp F13     &tog 1
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 
         };
         function_layer { 
@@ -29,7 +29,7 @@
     &kp CAPS    &trans          &trans          &trans          &kp RSHIFT      &trans              &trans      &trans      &trans      &trans      &kp LBKT    &kp END
     &kp CAPS    &kp CAPS                                        &kp F24         &kp CAPS            &kp F24     &kp F24                             &trans      &trans
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
     };
 };

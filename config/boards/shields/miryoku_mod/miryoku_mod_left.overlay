@@ -14,4 +14,6 @@
 &left_encoder1 {
     status = "okay";
 };
-
+&left_encoder2 {
+    status = "okay";
+};

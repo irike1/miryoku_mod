@@ -3,8 +3,8 @@
 &pinctrl {
     qdec_default: qdec_default {
         group1 {
-            psels = <NRF_PSEL(QDEC_A, 1, 11)>,
-                    <NRF_PSEL(QDEC_B, 1, 10)>;
+            psels = <NRF_PSEL(QDEC_A, 0, 10)>,
+                    <NRF_PSEL(QDEC_B, 0, 02)>;
             bias-pull-up;
         };
     };

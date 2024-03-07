@@ -11,9 +11,9 @@
     ;
 };
 
-// &left_encoder {
-//     status = "okay";
-// };
+&left_encoder {
+    status = "okay";
+};
 &pinctrl {
     qdec_default: qdec_default {
         group1 {

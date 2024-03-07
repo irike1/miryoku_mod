@@ -8,26 +8,27 @@
     };
 
     
-    // Set up the QDEC hardware based driver and give it the same label as the deleted node.
-    encoder: &qdec0 {
-        status = "okay";
-        led-pre = <0>;
+    // encoder: &qdec0 {
+    //     status = "okay";
+    //     led-pre = <0>;
+    //     steps = <30>;
+    //     pinctrl-0 = <&qdec_default>;
+    //     pinctrl-names = "default";
+    // };
+
+    left_encoder: encoder_left {
+        compatible = "alps,ec11";
+        a-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        b-gpios = <&gpio0 02 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
         steps = <30>;
-        pinctrl-0 = <&qdec_default>;
-        pinctrl-names = "default";
+    };
+    
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder>;
+        triggers-per-rotation = <30>;
     };
 
-    // left_encoder: encoder_left {
-    //     compatible = "alps,ec11";
-    //     a-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
-    //     b-gpios = <&gpio0 02 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
-    //     steps = <30>;
-    // };
-    // sensors: sensors {
-    //     compatible = "zmk,keymap-sensors";
-    //     sensors = <&left_encoder>;
-    //     triggers-per-rotation = <30>;
-    // };
 
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";

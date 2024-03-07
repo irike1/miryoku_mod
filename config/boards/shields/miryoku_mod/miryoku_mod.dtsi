@@ -13,6 +13,8 @@
         a-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
         b-gpios = <&gpio0 02 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
         steps = <30>;
+        status = "disabled";
+
     };
 
     sensors: sensors {

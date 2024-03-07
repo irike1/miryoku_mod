@@ -3,7 +3,7 @@ id: miryoku_mod
 name: MIRYOKU_MOD
 type: shield
 url: https://github.com/irike1/miryoku_mod
-requires: [pro_micro]
+requires: [nice_nano_v2]
 exposes: [i2c_oled]
 features:
   - keys

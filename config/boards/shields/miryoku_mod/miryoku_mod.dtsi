@@ -17,6 +17,8 @@
     };
     right_encoder1: encoder_right {
         compatible = "alps,ec11";
+        b-gpios = <&gpio0 02 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        a-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
         steps = <30>;
         status = "disabled";
     };

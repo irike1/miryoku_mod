@@ -41,9 +41,9 @@
     };
 };
 
-// / {
-//     chosen {
-//         zmk,underglow = &led_strip;
-//     };
-// };
+/ {
+    chosen {
+        zmk,underglow = &led_strip;
+    };
+};
 

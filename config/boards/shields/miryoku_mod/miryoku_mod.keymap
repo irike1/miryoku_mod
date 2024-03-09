@@ -21,8 +21,8 @@
     &kp TAB         &kp Q           &kp W           &kp E           &kp R           &kp T               &kp Y       &kp U       &kp I       &kp O       &kp P       &kp MINUS
     &kp TAB         &kp A           &kp S           &kp D           &kp F           &kp G               &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp APOS
     &kp LEFT_WIN    &kp Z           &kp X           &kp C           &kp V           &kp B               &kp N       &kp M       &kp COMMA   &kp DOT     &kp SLASH   &kp ENTER
-    &kp CAPS        &kp LCTRL       &kp LALT        &kp SPACE       &kp LSHFT           &tog 2              &mo 1       &kp BSPC    &kp SPACE   &kp ENTER   &kp DELETE  &kp RBKT
-    &kp CAPS        &kp CAPS                                        &kp C_MUTE      &kp CAPS            &kp F24     &kp F24                             &kp F13     &tog 1
+    &kp CAPS        &kp LCTRL       &kp LALT        &kp SPACE       &kp LSHFT       &mo 1              &mo 1       &kp BSPC    &kp SPACE   &kp ENTER   &kp DELETE  &kp RBKT
+    &kp CAPS        &kp CAPS                                        &tog 2          &kp CAPS            &kp F24     &kp F24                             &kp F13     &tog 1
             >;                                                                                  //mid
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 
@@ -46,7 +46,7 @@
     &kp G           &kp TAB           &kp Q          &kp N3          &kp E           &kp R               &kp Y       &kp U       &kp I       &kp O       &kp P       &kp MINUS
     &kp Y           &kp LSHIFT      &kp A           &kp W           &kp D           &kp F               &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp APOS
     &kp LCTRL       &kp LCTRL       &kp Z           &kp S           &kp X           &kp B               &kp N       &kp M       &kp COMMA   &kp DOT     &kp SLASH   &kp ENTER
-    &kp CAPS        &kp TAB         &kp LALT        &kp SPACE       &kp T           &trans              &mo 1       &kp BSPC    &kp SPACE   &kp ENTER   &kp DELETE  &kp RBKT
+    &kp CAPS        &kp TAB         &kp LALT        &kp SPACE       &kp T           &kp G              &mo 1       &kp BSPC    &kp SPACE   &kp ENTER   &kp DELETE  &kp RBKT
     &kp CAPS        &kp CAPS                                        &trans          &kp CAPS            &kp F24     &kp F24                             &kp F13     &tog 1
             >;                                                                                  //mid
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;

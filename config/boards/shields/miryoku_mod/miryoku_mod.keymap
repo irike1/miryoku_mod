@@ -4,13 +4,13 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-     behaviors {
-        rgb_encoder: rgb_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
-        };
-    };
+    //  behaviors {
+    //     rgb_encoder: rgb_encoder {
+    //         compatible = "zmk,behavior-sensor-rotate";
+    //         #sensor-binding-cells = <0>;
+    //         bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+    //     };
+    // };
 
     keymap {
         compatible = "zmk,keymap";
@@ -22,7 +22,7 @@
     &kp TAB         &kp A           &kp S           &kp D           &kp F           &kp G               &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp APOS
     &kp LEFT_WIN    &kp Z           &kp X           &kp C           &kp V           &kp B               &kp N       &kp M       &kp COMMA   &kp DOT     &kp SLASH   &kp ENTER
     &kp CAPS        &kp LCTRL       &kp LALT        &kp SPACE       &kp LSHIFT      &tog 3              &mo 1       &kp BSPC    &kp SPACE   &kp ENTER   &kp DELETE  &kp RBKT
-    &kp CAPS        &kp CAPS                                        &tog 3          &kp CAPS            &kp F24     &kp F24                             &kp F13     &tog 1
+    &kp CAPS        &kp CAPS                                        &kp C_MUTE      &kp CAPS            &kp F24     &kp F24                             &kp F13     &tog 1
             >;                                                                                  //mid
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 
@@ -47,7 +47,7 @@
     &kp Y           &kp LSHIFT      &kp A           &kp W           &kp D           &kp F               &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp APOS
     &kp B           &kp LCTRL       &kp Z           &kp S           &kp X           &kp V               &kp N       &kp M       &kp COMMA   &kp DOT     &kp SLASH   &kp ENTER
     &kp CAPS        &kp TAB         &kp LALT        &kp SPACE       &kp T           &tog 3              &mo 1       &kp BSPC    &kp SPACE   &kp ENTER   &kp DELETE  &kp RBKT
-    &kp CAPS        &kp CAPS                                        &kp C_MUTE      &kp CAPS            &kp F24     &kp F24                             &kp F13     &tog 1
+    &kp CAPS        &kp CAPS                                        &trans      &kp CAPS            &kp F24     &kp F24                             &kp F13     &tog 1
             >;                                                                                  //mid
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 

@@ -7,38 +7,11 @@ config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 
-endif # ZMK_BACKLIGHT
+endif
 
 if SHIELD_MIRYOKU_MOD_LEFT || SHIELD_MIRYOKU_MOD_RIGHT
 
 config ZMK_SPLIT
     default y
-
-# if ZMK_DISPLAY
-
-# config I2C
-#     default y
-
-# config SSD1680
-#     default y
-
-# endif # ZMK_DISPLAY
-
-# if LVGL
-
-# config LV_Z_VDB_SIZE
-#     default 122
-
-# config LV_DPI_DEF
-#     default 250
-
-# config LV_Z_BITS_PER_PIXEL
-#     default 1
-
-# choice LV_COLOR_DEPTH
-#     default LV_COLOR_DEPTH_1
-# endchoice
-
-# endif # LVGL
 
 endif
